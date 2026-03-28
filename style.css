@@ -1,0 +1,112 @@
+body{
+margin:0;
+font-family:Cinzel;
+background:#fff5e6;
+text-align:center;
+}
+
+.landing{
+height:100vh;
+background:linear-gradient(#5b0000,#9b0000);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.title{
+font-size:60px;
+}
+
+.names{
+font-family:"Great Vibes";
+font-size:50px;
+color:gold;
+}
+
+button{
+padding:12px 30px;
+background:gold;
+border:none;
+font-size:18px;
+cursor:pointer;
+}
+
+.hidden{
+display:none;
+}
+
+.couple{
+padding:60px;
+}
+
+.couple img{
+width:250px;
+border-radius:20px;
+}
+
+.countdown{
+background:#ffe4c4;
+padding:40px;
+}
+
+.details{
+padding:40px;
+}
+
+.gallery{
+padding:50px;
+}
+
+.photos{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.photos img{
+width:200px;
+border-radius:10px;
+}
+
+.rsvp{
+background:#9b0000;
+color:white;
+padding:40px;
+}
+
+.rsvp input{
+padding:10px;
+width:220px;
+}
+
+/* Petal animation */
+
+.petals{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+}
+
+.petal{
+position:absolute;
+width:20px;
+height:20px;
+background:pink;
+border-radius:50%;
+opacity:0.8;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-10vh) rotate(0deg);
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+}
